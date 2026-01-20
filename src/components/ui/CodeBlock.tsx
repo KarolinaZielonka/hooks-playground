@@ -3,7 +3,7 @@
 // Placeholder - will be implemented in Phase 1
 export function CodeBlock({
   code,
-  _language = "tsx",
+  language: _language = "tsx",
 }: {
   code: string;
   language?: string;
