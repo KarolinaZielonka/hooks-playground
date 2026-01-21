@@ -2,23 +2,25 @@ import Link from "next/link";
 import type { Hook } from "@/lib/types/hook";
 
 const statusStyles = {
-  planned: "bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300",
+  planned: "bg-gray-100 text-gray-600 dark:bg-gray-600 dark:text-gray-200",
   "in-progress":
-    "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300",
-  done: "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300",
+    "bg-amber-100 text-amber-700 dark:bg-amber-500/20 dark:text-amber-400",
+  done: "bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400",
 };
 
 const difficultyStyles = {
-  beginner: "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300",
+  beginner:
+    "bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400",
   intermediate:
-    "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300",
-  advanced: "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300",
+    "bg-amber-100 text-amber-700 dark:bg-amber-500/20 dark:text-amber-400",
+  advanced: "bg-rose-100 text-rose-700 dark:bg-rose-500/20 dark:text-rose-400",
 };
 
 const categoryStyles = {
-  "built-in": "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300",
+  "built-in":
+    "bg-sky-100 text-sky-700 dark:bg-sky-500/20 dark:text-sky-400",
   custom:
-    "bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300",
+    "bg-violet-100 text-violet-700 dark:bg-violet-500/20 dark:text-violet-400",
 };
 
 interface HookCardProps {

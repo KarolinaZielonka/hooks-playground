@@ -5,7 +5,7 @@ export const builtInHooks: Hook[] = [
     id: "use-state",
     name: "useState",
     category: "built-in",
-    status: "planned",
+    status: "done",
     description: "Manage component state with a value and setter function",
     difficulty: "beginner",
   },
