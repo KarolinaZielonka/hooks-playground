@@ -21,7 +21,7 @@ export const builtInHooks: Hook[] = [
     id: "use-ref",
     name: "useRef",
     category: "built-in",
-    status: "planned",
+    status: "in-progress",
     description: "Access DOM elements and persist mutable values",
     difficulty: "beginner",
   },

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Badge } from "@/components/ui/Badge";
 import { allHooks, getHookById } from "@/lib/data/hooks-list";
 import { UseStateDemos } from "./demos/UseStateDemos";
+import { UseRefDemos } from "./demos/UseRefDemos";
 
 interface HookPageProps {
   params: Promise<{ slug: string }>;
@@ -75,6 +76,8 @@ function DemosSection({ slug }: { slug: string }) {
   switch (slug) {
     case "use-state":
       return <UseStateDemos />;
+    case "use-ref":
+      return <UseRefDemos />;
     default:
       return (
         <div className="rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800">
